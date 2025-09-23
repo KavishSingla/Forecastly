@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Enter city name..." id="cityInput">
+            <button class="search-button" id="searchBtn">🔍</button>
+        </div>
+
+        <div class="loading" id="loading">
+            Fetching weather data
+        </div>
+
+        <div class="error" id="error">
+            City not found. Please try again.
+        </div>
+
+        <div class="weather-info" id="weatherInfo">
+            <div class="city-name" id="cityName">Patiala, IN</div>
+            <div class="weather-icon" id="weatherIcon">☀️</div>
+            <div class="temperature" id="temperature">28°C</div>
+            <div class="description" id="description">Clear sky</div>
+            
+            <div class="weather-details">
+                <div class="detail-card feels-like-card">
+                    <div class="detail-label">Feels Like</div>
+                    <div class="detail-value" id="feelsLike">32°C</div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-label">Humidity</div>
+                    <div class="detail-value" id="humidity">65%</div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-label">Wind Speed</div>
+                    <div class="detail-value" id="windSpeed">12 km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js" ></script>
+</html>
