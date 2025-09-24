@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="search-container">
-            <input type="text" class="search-input" placeholder="Enter city name..." id="cityInput">
+            <input type="text" class="search-input" placeholder="Enter city name..." id="cityInput" required>
             <button class="search-button" id="searchBtn">🔍</button>
         </div>
 
@@ -22,23 +22,23 @@
         </div>
 
         <div class="weather-info" id="weatherInfo">
-            <div class="city-name" id="cityName">Patiala, IN</div>
+            <div class="city-name" id="cityName"></div>
             <div class="weather-icon" id="weatherIcon">☀️</div>
-            <div class="temperature" id="temperature">28°C</div>
-            <div class="description" id="description">Clear sky</div>
+            <div class="temperature" id="temperature"></div>
+            <div class="description" id="description"></div>
             
             <div class="weather-details">
                 <div class="detail-card feels-like-card">
                     <div class="detail-label">Feels Like</div>
-                    <div class="detail-value" id="feelsLike">32°C</div>
+                    <div class="detail-value" id="feelsLike"></div>
                 </div>
                 <div class="detail-card">
                     <div class="detail-label">Humidity</div>
-                    <div class="detail-value" id="humidity">65%</div>
+                    <div class="detail-value" id="humidity"></div>
                 </div>
                 <div class="detail-card">
                     <div class="detail-label">Wind Speed</div>
-                    <div class="detail-value" id="windSpeed">12 km/h</div>
+                    <div class="detail-value" id="windSpeed"></div>
                 </div>
             </div>
         </div>
