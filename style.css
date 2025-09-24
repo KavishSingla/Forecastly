@@ -240,6 +240,13 @@
             display: block;
             animation: shake 0.5s ease-in-out;
         }
+        .temp-toggle{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            border: 0px;
+        }
 
         @keyframes shake {
             0%, 100% { transform: translateX(0); }
