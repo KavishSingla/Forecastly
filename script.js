@@ -1,3 +1,5 @@
+import { apiKey } from './config.js';
+
 let cityInput = document.querySelector('#cityInput');
 let searchBtn = document.querySelector('#searchBtn');
 let loading = document.querySelector('#loading');
@@ -11,7 +13,7 @@ let feelsLike = document.querySelector('#feelsLike');
 let humidity = document.querySelector('#humidity');
 let windSpeed = document.querySelector('#windSpeed');
 
-const apiKey = "7009e8f11943f03da09ca2cda634d583";
+
 
 function displayError(msg) {
     
