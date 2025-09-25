@@ -13,6 +13,8 @@ let feelsLike = document.querySelector('#feelsLike');
 let humidity = document.querySelector('#humidity');
 let windSpeed = document.querySelector('#windSpeed');
 let toggleBtn = document.querySelector('#toggleBtn');
+let popup = document.querySelector('#popup');
+let closeBtn = document.querySelector('#closeBtn');
 
 let currentTempC = 0;
 let feelsLikeC = 0;
@@ -66,7 +68,7 @@ async function getweather(city) {
         setTimeout(() => {
             loading.classList.remove("show");
             updateWeatherUI(data);
-        }, 2000);
+        }, 1000);
 
     } catch (err) {
         loading.classList.remove("show");
@@ -106,3 +108,21 @@ function updateWeatherUI(data) {
     weatherIcon.innerText = icon;
     weatherInfo.classList.add("show");
 }
+
+window.addEventListener("load", () => {
+  const popup = document.getElementById("popup");
+  const closeBtn = document.getElementById("closeBtn");
+
+  popup.style.display = "flex";
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
+
